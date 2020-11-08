@@ -36,13 +36,14 @@ const quotes = [
   }
 ];
 
-
-
 /***
  * `getRandomQuote` function
 ***/
 
-
+function getRandomQuote() {
+  let randomNumber = Math.floor(Math.random() * 5);
+  return quotes[randomNumber];
+}
 
 /***
  * `printQuote` function
