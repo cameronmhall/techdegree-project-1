@@ -38,6 +38,19 @@ const quotes = [
   }
 ];
 
+/**
+ * 'changeBackgroundColor' function
+ * 
+ */
+function changeBackgroundColor() {
+  for ( let i = 0 ; i < 3 ; i++ ) {
+    var red = Math.floor(Math.random() * 256);
+    var green = Math.floor(Math.random() * 256);
+    var blue = Math.floor(Math.random() * 256);
+  }
+  document.body.style.background = `rgb(${red}, ${green}, ${blue})`;
+}
+
 /***
  * `getRandomQuote` function
  * @return: a randomly selected object from the quotes array
@@ -72,7 +85,8 @@ function printQuote() {
   };
   html += "</p>"
   //display html string in browser
-  document.getElementById('quote-box').innerHTML = html; 
+  document.getElementById('quote-box').innerHTML = html;
+  changeBackgroundColor(); 
 }
 
 /***
