@@ -87,10 +87,9 @@ function printQuote() {
   //display html string in browser
   document.getElementById('quote-box').innerHTML = html;
   changeBackgroundColor(); 
-  setTimeout(printQuote, 5000);
 }
 
-setTimeout(printQuote, 5000);
+setInterval(printQuote, 5000);
 
 /***
  * click event listener for the print quote button
