@@ -11,6 +11,31 @@ project 1 - A Random Quote Generator
  * `quotes` array 
 ***/
 
+const quotes = [
+  {
+    quote: "The best way to get started is to quit talking and begin doing.", 
+    source: "Walt Disney", 
+  },
+  {
+    quote: "You're tearing me apart, Lisa!", 
+    source: "Johnny (Tommy Wiseau)", 
+    citation: "The Room",
+    year: "2003"
+  },
+  {
+    quote: "I want to put a ding in the universe.",
+    source: "Steve Jobs"
+  },
+  {
+    quote: "Creativity is intelligence having fun.", 
+    source: "Albert Einstein"
+  },
+  {
+    quote: "When something is important enough, you do it even if the odds are not in your favor.", 
+    source: "Elon Musk"
+  }
+];
+
 
 
 /***
