@@ -16,6 +16,7 @@ const quotes = [
   {
     quote: "The best way to get started is to quit talking and begin doing.", 
     source: "Walt Disney", 
+    tags: "Motivational"
   },
   {
     quote: "You're tearing me apart, Lisa!", 
@@ -64,6 +65,10 @@ function printQuote() {
   //if the object has a year property concatenate to html string
   if (randomObject.hasOwnProperty("year")) {
     html += "<span class='year'>" + randomObject.year + "</span>";
+  };
+  //if the object has a tags property concatenate to html string
+  if (randomObject.hasOwnProperty("tags")) {
+    html += "<span class='tags'>" + randomObject.tags + "</span>";
   };
   html += "</p>"
   //display html string in browser
